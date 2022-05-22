@@ -1,0 +1,98 @@
+.app__gallery {
+  width: 100%;
+}
+.app__gallery-wrapper {
+  padding: 4rem;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.gallery__content {
+  flex: 1;
+  /* min-width: 500px; */
+  padding: 2rem !important;
+}
+.gallery__content p,
+button {
+  margin: 1rem 0;
+}
+.gallery__images {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  max-width: 50%;
+  position: relative;
+}
+.images__container {
+  width: max-content;
+  display: flex;
+  overflow-x: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.images__container::-webkit-scrollbar {
+  display: none;
+}
+.images__container-wrapper {
+  position: relative;
+  min-width: 301px;
+  height: 447px;
+  margin-right: 1.2rem;
+}
+.images__container-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.3s ease;
+}
+.image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.instaIcon {
+  opacity: 0;
+}
+.images__container-wrapper:hover .image-overlay {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.images__container-wrapper:hover .instaIcon {
+  opacity: 1;
+}
+
+.gallery__images-arrows {
+  width: 100%;
+  /* height: 100%; */
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  left: 0;
+  bottom: 5%;
+}
+.Icon {
+  color: var(--color-white);
+  font-size: 2.5rem !important;
+  background-color: var(--color-black);
+  cursor: pointer;
+  transition: all 0.3s ease-in !important;
+}
+
+.Icon:hover {
+  color: var(--color-golden);
+}
+
+@media screen and (max-width: 668px) {
+  .gallery__images {
+    max-width: 100%;
+    margin-top: 1rem;
+  }
+  .app__gallery-wrapper {
+    padding: 1rem;
+  }
+}

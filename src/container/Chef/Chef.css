@@ -1,0 +1,50 @@
+.chef__img img {
+  width: 90% !important;
+}
+
+.chefs-word {
+  margin: 2rem 0;
+}
+.chefs-word img {
+  width: 30px;
+  margin: 0 0.5rem 0 0;
+}
+.chefs-word {
+  color: var(--color-white);
+  font-family: var(--font-base);
+}
+.chef__details h1 {
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 41.6px;
+  font-family: var(--font-base);
+  color: var(--color-golden);
+  letter-spacing: 0.1rem;
+}
+.chef__details p {
+  color: var(--color-gray);
+  letter-spacing: 0.04em;
+  font-family: var(--font-alt);
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+.chef__details .sign {
+  width: 100px;
+}
+.sign img {
+  width: 100%;
+}
+@media (min-width: 1600px) {
+  .chefs-word {
+    font-size: 2rem;
+  }
+  .chef__details h1 {
+    font-size: 40px;
+  }
+  .chef__details p {
+    font-size: 1.6rem;
+  }
+  .chef__details .sign {
+    width: 180px;
+  }
+}

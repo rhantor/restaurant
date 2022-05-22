@@ -1,0 +1,71 @@
+.app__header {
+  background-color: var(--color-black);
+  position: relative;
+}
+
+.absolute__title-left {
+  position: absolute;
+  left: 0;
+  color: var(--color-golden) !important;
+  font-size: 0.8rem !important;
+  display: flex;
+  column-gap: 2rem;
+  width: fit-content;
+  transform: rotate(-90deg);
+}
+
+.absolute__title-bottom {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  color: var(--color-golden) !important;
+  display: flex;
+}
+.absolute__title-bottom span {
+  margin: 0 0.5rem;
+  display: inline-block;
+  font-size: 0.7rem;
+}
+.absolute__title-bottom .span2 {
+  position: relative;
+  display: block;
+}
+.absolute__title-bottom .span2::after {
+  content: " ";
+  position: absolute;
+  top: 13px;
+  left: -12px;
+  width: 1.5rem;
+  height: 2px;
+  background: var(--color-golden);
+}
+
+.absolute__title-right {
+  position: absolute;
+  bottom: 2rem;
+  right: -1rem;
+  letter-spacing: 0.5em !important;
+  font-size: 0.7rem !important;
+  transform: translateX(-50%);
+  color: var(--color-golden) !important;
+  display: flex;
+}
+.absolute__title-right::after {
+  content: "";
+  position: absolute;
+  top: -7rem;
+  right: 50%;
+  transform: translateX(-50%);
+  width: 1px;
+  height: 4rem;
+  background-color: var(--color-golden);
+}
+
+@media screen and (max-width: 1160px) {
+  .absolute__title-left,
+  .absolute__title-bottom,
+  .absolute__title-right {
+    display: none;
+  }
+}

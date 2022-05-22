@@ -1,0 +1,106 @@
+.app__footer {
+  position: relative;
+  z-index: 1;
+  padding-bottom: 0 !important;
+}
+.app__footer::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: -1;
+}
+.news-letter {
+  justify-content: center !important;
+  align-items: center !important;
+  text-align: center;
+  background: #0c0c0c;
+  min-width: 100% !important;
+}
+
+form input {
+  padding: 0.8rem;
+  min-width: 290px;
+  background-color: var(--color-black);
+  outline: none;
+  border: 1px solid var(--color-gray);
+  color: var(--color-crimson);
+  font-family: var(--font-base);
+  font-size: 1rem;
+  margin-right: 1rem;
+  text-align: center;
+  letter-spacing: 0.04rem;
+}
+
+footer {
+  width: 100%;
+  margin: 5rem 0 0 0;
+}
+.footer__wrapper {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.contact__info {
+  flex: 1;
+}
+.contact__info,
+.working__hours .copy-right p {
+  font-family: var(--font-alt);
+  color: var(--color-gray);
+  font-size: 0.9rem;
+  margin: 1rem 0;
+}
+.restaurant__info {
+  flex: 1;
+  text-align: center;
+}
+
+.social__icon {
+  margin: 1.5rem 0;
+}
+
+.social__icon a {
+  margin: 1rem;
+  transition: all 0.1s ease;
+}
+.Icon:hover {
+  transform: scale(0.9);
+  text-align: center;
+}
+
+.working__hours {
+  flex: 1;
+  text-align: right;
+}
+.copy-right {
+  text-align: center;
+  font-family: var(--font-alt);
+  color: var(--color-gray);
+  font-size: 0.9rem;
+  margin: 1rem 0;
+}
+@media screen and (max-width: 1024px) {
+  .footer__wrapper {
+    flex-direction: column;
+    row-gap: 2rem;
+  }
+  .contact__info {
+    text-align: center;
+    order: 2;
+  }
+  .restaurant__info {
+    order: 1;
+  }
+  .working__hours {
+    order: 3;
+    text-align: center;
+  }
+  .copy-right {
+    order: 4;
+  }
+}

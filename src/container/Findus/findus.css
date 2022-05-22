@@ -1,0 +1,15 @@
+.find__info {
+  margin: 1rem 0;
+}
+.find__subtitle {
+  font-size: 1rem;
+  color: var(--color-gray) !important;
+}
+.open-hour {
+  color: var(--color-white);
+  margin: 0.5rem 0;
+  font-family: var(--font-base);
+}
+.find__info h2 {
+  margin: 1rem 0;
+}
